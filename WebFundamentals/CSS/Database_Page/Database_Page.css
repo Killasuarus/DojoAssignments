@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrapper{
+  background-color: #504c6f;
+  background: radial-gradient(#765b5f, #524f75, #1a0b10);
+  width: 1000px;
+}
+#header{
+  background-color: #f6f7f5;
+  width: 1000px;
+}
+#nametag{
+  margin-left: 10px;
+}
+h2{
+  display: inline-block;
+  vertical-align: top;
+  margin: 50px 10px 0px 300px;
+}
+#navigation{
+  display: inline-block;
+  background-color: #f6f7f5;
+}
+.navtable{
+  border: 1px solid black;
+  padding: 10px 36px 10px 36px;
+}
+#filler{
+  border: 1px solid black;
+  width: 73px;
+}
+table{
+  border-spacing: 0px;
+}
+a{
+  color: blue;
+}
+.bigpic{
+  height: 250px;
+  width: 480px;
+  border: 5px solid lightgrey;
+  display: inline-block;
+  margin: 15px 0px 0px 15px;
+}
+.littlepic{
+  width: 227px;
+  height: 130px;
+}
+#textbox{
+  display: inline-block;
+  width: 440px;
+  height: 260px;
+  vertical-align: top;
+  margin: 15px 25px 0px 15px;
+  background-color: whitesmoke;
+  background: linear-gradient(to right, whitesmoke, #d7c9d7)
+}
+h3{
+  background-color: darkgrey;
+  background: linear-gradient(whitesmoke, #666666, whitesmoke);
+  height: 30px;
+  padding: 10px 0px 0px 8px;
+  font-size: 13pt;
+}
+h4{
+  margin: 10px 0px 0px 8px;
+}
+p{
+  margin: 15px 0px 0px 8px;
+  font-size: 11pt;
+}
+#icon {
+  margin-left: 825px;
+}
+.icon{
+  height: 15px;
+  width: 12px;
+}
+.iconlink{
+  display: inline-block;
+  font-size: 8pt;
+  color: steelblue;
+  vertical-align: top;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+#subcontent{
+  margin-left: 15px;
+}
+.textbox{
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  width: 227px;
+  background-color: lightsteelblue;
+  background: linear-gradient(lightsteelblue, whitesmoke);
+  vertical-align: top;
+  height: 480px;
+}
+.textbox a{
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid black;
+  background-color: steelblue;
+  color: white;
+  font-weight: bold;
+  font-size: 8pt;
+  text-decoration: none;
+  margin-left: 130px;
+  font-family: helvetica;
+}
+.textbox p{
+  height: 250px;
+}

@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+#wrapper{
+  width: 900px;
+  background-color: whitesmoke;
+  background: linear-gradient(whitesmoke, white);
+}
+h1{
+  font-size: 30pt;
+  display: inline-block;
+  font-weight: normal;
+  color: darkslategray;
+  margin-left: 100px;
+  margin-top: 30px;
+  background-color: white;
+}
+h2{
+  background-color: steelblue;
+  color: white;
+  background: linear-gradient(#325d81, steelblue, #325d81);
+  padding: 10px 0px 10px 15px;
+  font-weight: normal;
+  font-size: 20pt;
+}
+.blue_text{
+  color: steelblue;
+}
+.globe{
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+}
+#side{
+  display: inline-block;
+  vertical-align: top;
+  width: 182px;
+}
+#redtxt{
+  color: red;
+}
+h4{
+  margin: 20px 0px 10px 3px;
+  font-size: 11pt;
+}
+#buttons{
+  height: 180px;
+  border-bottom: 2px solid grey;
+}
+#buttons p{
+  font-size: 9pt;
+  font-weight: bold;
+  margin: 0px 0px 15px 3px;
+}
+#bluebutton{
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  width: 175px;
+  display: block;
+  border-radius: 5px;
+  font-size: 11pt;
+  height: 25px;
+  margin-left: 5px;
+  border-bottom: 2px groove grey;
+  border-right: 2px groove grey;
+}
+#orangebutton{
+  background: orange;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  width: 175px;
+  display: block;
+  border-radius: 5px;
+  font-size: 11pt;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-bottom: 2px groove grey;
+  border-right: 2px groove grey;
+}
+#ninja{
+  background-image: url(ad_background.png);
+  width: 180px;
+  height: 260px;
+  padding-top: 15px;
+  margin-top: 20px;
+  border-bottom: 2px groove grey;
+  border-right: 2px groove grey;
+}
+h3{
+  color: whitesmoke;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: normal;
+}
+.ninja{
+  height: 110px;
+  width: 80px;
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#ninjabutton{
+  background-color: turquoise;
+  color: white;
+  text-align: center;
+  padding: 5px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 11pt;
+  margin: 0px 10px 0px 10px;
+  border-bottom: 2px groove grey;
+  border-right: 2px groove grey;
+}
+#middle{
+  width: 675px;
+  display: inline-block;
+  margin-left: 30px;
+}
+#contact{
+  display: inline-block;
+  width: 675px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+#contact img{
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+#dns{
+  color: steelblue;
+  display: inline-block;
+  font-size: 10pt;
+  vertical-align: top;
+  margin-top: 15px;
+  font-weight: bold;
+}
+#contact .phone{
+  height: 40px;
+  width: 40px;
+  margin-left: 430px;
+}
+#contactinfo{
+  display: inline-block;
+}
+#contactinfo p{
+  font-size: 7pt;
+  color: darkgray;
+  text-align: right;
+}
+#contactinfo .phonenumber{
+  color: #01c0df;
+  font-size: 17pt;
+  font-weight: bold;
+}
+h5{
+  color: #3672a5;
+  margin-top: 5px;
+  font-size: 14pt;
+  margin-bottom: 5px;
+}
+#info p{
+  font-size: 10pt;
+  margin-bottom: 7px;
+}
+#info ul{
+  font-size: 10pt;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  margin-bottom: 7px;
+}
+#info li{
+  margin-bottom: 5px;
+}
+#info ol{
+  font-size: 10pt;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  margin-bottom: 7px;
+}
+#info img{
+  height: 90px;
+  width: 250px;
+  margin-left: 250px;
+}
+span{
+  font-weight: bold;
+}
+.tq{
+  color: #01c0df;
+}
+#footer{
+  display: inline-block;
+  border-top: 5px solid steelblue;
+  border-left: 5px solid steelblue;
+  border-right: 5px solid steelblue;
+  border-right-style: 3px outset grey;
+  width: 665px;
+}
+#text{
+  width: 400px;
+  display: inline-block;
+}
+#footer img{
+  vertical-align: top;
+  height: 90px;
+  width: 100px;
+}
+#footer h5{
+  vertical-align: top;
+  display: inline-block;
+  color: #3672a5;
+  font-size: 14pt;
+  margin-bottom: 5px;
+  width: 400px;
+}
+#footer p{
+  display: inline-block;
+  font-size: 10pt;
+  margin-bottom: 5px;
+  width: 540px;
+}
+#footer a{
+  text-decoration: none;
+  color: #3672a5;
+}
