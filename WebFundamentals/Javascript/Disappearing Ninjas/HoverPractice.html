@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover Practice</title>
+    <style>
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dojo.js">
+      $(document).ready(function(){
+        $('img[src="bulbasprite.png"]').hover(function(){
+          $(this).attr('src', "mrTsprite.jpg");
+        }, function(){
+          $(this).attr('src', "bulbasprite.png");
+        })
+        $('img[src="deathstrokesprite.png"]').hover(function(){
+          $(this).attr('src', "spidermansprite.jpg");
+        }, function(){
+          $(this).attr('src', "deathstrokesprite.png");
+        })
+        $('img[src="ironmansprite.jpg"]').hover(function(){
+          $(this).attr('src', "piratesprite.jpeg");
+        }, function(){
+          $(this).attr('src', "ironmansprite.jpg");
+        })
+        $('img[src="megamansprite.jpg"]').hover(function(){
+          $(this).attr('src', "turtlesprite.jpg");
+        }, function(){
+          $(this).attr('src', "megamansprite.jpg");
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <img src="bulbasprite.png">
+    <img src="deathstrokesprite.png">
+    <img src="ironmansprite.jpg">
+    <img src="megamansprite.jpg">
+  </body>
+</html>

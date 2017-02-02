@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <style>
+      form{
+        width: 280px;
+        text-align: right;
+      }
+      .cards{
+        width: 300px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .cards h1{
+        text-align: center;
+      }
+      .cards h5{
+        text-align: center;
+      }
+      p{
+        display: none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('form').submit(function(){
+          var a = $('#info1').val();
+          var b = $('#info2').val();
+          var c = $('#info3').val();
+          var showvalue = '<div class="cards"><h1>' + a + ' ' + b + '</h1>'+'<h5>Click here for description</h5><p>'+c+'</p></div>';
+          console.log(showvalue);
+          $('.cardarea').append(showvalue);
+          $('form').trigger('reset');
+          return false
+        });
+        // // $('h5').click(function(){
+        // //   $(this).hide('h5', 'h1').show('p');
+        // });
+        $(document).on('click', 'h5', function(){
+          $('h1').hide();
+          $('h5').hide();
+          $('p').show();
+        })
+        $(document).on('click', 'p', function(){
+          $('h1').show();
+          $('h5').show();
+          $('p').hide();
+        })
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id="form">
+      <form action="" method="post">
+        First Name:<input type="text" id="info1" name="first_name">
+        Last Name:<input type="text" id="info2" name="last_name">
+        Description:<textarea id="info3" name="description"></textarea>
+        <input type="submit" class="btn" value="Submit">
+      </form>
+    </div>
+    <div class="cardarea">
+      <!-- <div class="cards">
+        <h1>Dylan Deveraux</h1>
+        <p>Click for description!</p>
+        <p class="description">This is a description about me!</p>
+      </div> -->
+    </div>
+  </body>
+</html>

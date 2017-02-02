@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Practice</title>
+    <style>
+      .red{
+        color: red;
+      }
+      p{
+        display: inline-block;
+      }
+      #pic{
+        display: none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#AC').click(function(){
+          $('#head p').addClass('red')
+        });
+        $('#ST').click(function(){
+          $('#pic').slideToggle()
+        });
+        $('#AP').click(function(){
+          $('#foot').append('<p>What up Cuz? Check out my sweet appendage ;)')
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="head">
+      <h1>AddClass</h1>
+      <button id="AC">AddClass</button>
+      <p>Click the button to add a class 'red' to this paragraph</p>
+    </div>
+    <div id="middle">
+      <h1>Slidetoggle</h1>
+      <button id="ST">Slidetoggle</button>
+      <p>Click the button to slidetoggle a hidden image</p>
+      <img id="pic" src="Dyl.jpg">
+      </div>
+    </div>
+    <div id="foot">
+      <h1>Append</h1>
+      <button id="AP">Append</button>
+      <p>Click the button to append a new paragraph!</p>
+    </div>
+  </body>
+</html>

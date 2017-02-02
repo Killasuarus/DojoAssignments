@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninjas</title>
+    <style>
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('img').click(function(){
+          $(this).hide()
+        })
+        $('button').click(function(){
+          $('img').show()
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <h1>jQuery - assignment 1</h1>
+    <div id="toppics">
+      <img src="bulbasprite.png">
+      <img src="deathstrokesprite.png">
+      <img src="ironmansprite.jpg">
+      <img src="megamansprite.jpg">
+    </div>
+    <div id="bottompics">
+      <img src="mrTsprite.jpg">
+      <img src="piratesprite.jpeg">
+      <img src="spidermansprite.jpg">
+      <img src="turtlesprite.jpg">
+    </div>
+    <button>Restore</button>
+  </body>
+</html>
