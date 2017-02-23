@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Money Game</title>
+    <style>
+    body{
+      margin-left: 20px;
+    }
+    div.buildings{
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      border: 1px solid black;
+    }
+    li.error{
+      color: red;
+    }
+    li.success{
+      color: green;
+    }
+    </style>
+  </head>
+  <body>
+    <h3>Your Money: {{request.session.gold}}</h3>
+    <div class="buildings">
+      <h1>Farm</h1>
+      <p>(earns 10-20 gold)</p>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="building" value="farm">
+        <input type="submit" value="Find Gold!">
+      </form>
+    </div>
+    <div class="buildings">
+      <h1>Cave</h1>
+      <p>(earns 5-10 gold)</p>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="building" value="cave">
+        <input type="submit" value="Find Gold!">
+      </form>
+    </div>
+    <div class="buildings">
+      <h1>House</h1>
+      <p>(earns 2-5 gold)</p>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="building" value="house">
+        <input type="submit" value="Find Gold!">
+      </form>
+    </div>
+    <div class="buildings">
+      <h1>Casino</h1>
+      <p>(earns/takes 0-50 gold)</p>
+      <form action="/process_money" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="building" value="casino">
+        <input type="submit" value="Find Gold!">
+      </form>
+    </div>
+    <p>Activites:</p>
+    <div id="log">
+      {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </body>
+</html>
